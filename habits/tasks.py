@@ -17,7 +17,8 @@ def habit_operate():
                 text += f" Затем я сделаю: {habit.associated_hab.action}."
             if habit.reward:
                 text += f" Я получу: {habit.reward}."
-            send_message(text, habit.user.chat_id)
+            print(text)
+            # send_message(text, habit.user.chat_id)
 
 
 def send_message(text, user_chat_id):
